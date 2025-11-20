@@ -18,8 +18,9 @@ h1,h3{
 #actionButton {
     background-image: url('andy.png');
     width: 40vw;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
     transition: background-image 1s ease;
     display: relative;
 }
