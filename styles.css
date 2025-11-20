@@ -1,0 +1,85 @@
+body {
+    background-color: #ffccff
+}
+
+.main {
+    display: flex;
+    
+}
+
+h1,h3{
+    margin: auto 20px;
+    padding: 10px;
+    text-align: center;
+    color: #ff00ff;
+}
+
+
+#actionButton {
+    background-image: url('andy.png');
+    width: 40vw;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease;
+    display: relative;
+}
+
+#actionButton.clicked {
+    background-image: url('pig.png');
+    background-size: contain;
+     background-position: center;
+    background-repeat: no-repeat;
+}
+
+#speech-bubble {
+    margin: 10px 10px 10px 30px;
+    width: 40vw;
+    height: 200px;
+    background-color: #f2d9f2;
+    position: relative;
+    border: 2px solid #f2d9f2;
+    border-radius: 10%;
+}
+
+#sentenceInput {
+    border: 0;
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    background: transparent;
+    font-size: 1.5em;      
+    line-height: 1.3em;    
+    text-align: left;      
+    vertical-align: top;   
+    resize: none;          
+    box-sizing: border-box;
+}
+
+#sentenceInput:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#speech-bubble::before {
+ 	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+    left: -55px;
+	right: auto;
+    top: 135px;
+	bottom: auto;
+	border: 32px solid;
+	border-color: transparent #f2d9f2 transparent transparent;
+
+}
+
+#translateButton {
+    height: 100%;
+    width: 100%;
+    display: absolute;
+    left: 0px;
+    top: 40px;
+    border-radius: 50%;
+    opacity: 0;
+}
